@@ -1,0 +1,106 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Color scheme
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{lightgray}{RGB}{128,128,128}
+\definecolor{accent}{RGB}{0,102,204}
+
+% Customize section titles - improved spacing
+\titleformat{\section}{\normalsize\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{4pt}
+
+% Customize hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    urlcolor=darkblue,
+    citecolor=darkblue
+}
+
+% Remove page numbering
+\pagestyle{empty}
+
+% Improved spacing
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+
+% Custom command for job entries - improved
+\newcommand{\jobentry}[4]{
+    \noindent\textbf{#1} \hfill \textit{#2} \\
+    \textit{#3} \hfill #4 \\[4pt]
+}
+
+% Custom command for highlighting metrics
+\newcommand{\metric}[1]{\textbf{\color{accent}#1}}
+
+\begin{document}
+
+% Header - more compact
+\begin{center}
+    {\Large\bfseries Neel Bhadkamkar} \\[2pt]
+    {\normalsize Senior Data Engineer} \\[4pt]
+    \href{mailto:neelbhadkamkar@outlook.com}{neelbhadkamkar@outlook.com} | 
+    \href{https://github.com/Neel-XV}{github.com/Neel-XV} | 
+    \href{https://linkedin.com/in/neelbhadkamkar}{linkedin.com/in/neelbhadkamkar}
+\end{center}
+
+\section{PROFESSIONAL SUMMARY}
+\noindent Results-driven Data Engineer with \textbf{3.8+ years} of experience designing, implementing, and optimizing enterprise-scale data pipelines and ETL processes. Expertise in transforming billions of records into actionable insights using cloud platforms and big data frameworks. Proven track record in improving performance, reducing costs, and automating manual processes in retail analytics environments.
+
+\section{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
+    \item \textbf{Programming \& Query Languages:} Python, SQL (T-SQL, MySQL), PySpark, Spark SQL
+    \item \textbf{Data Engineering:} ETL/ELT, Data Pipelines, Data Warehousing, Data Modeling, Schema Design
+    \item \textbf{Big Data \& Cloud:} Azure Data Services, Azure Databricks, Delta Lake, Apache Airflow, MS SQL Server, SQL Server Management Studio
+    \item \textbf{Performance Optimization:} Query Tuning, Data Pipeline Optimization, Resource Management
+    \item \textbf{Reporting \& Visualization:} MicroStrategy, Power BI
+    \item \textbf{Data Quality \& Governance:} Data Validation, Data Lineage, Unity Catalog, Compliance
+\end{itemize}
+
+\section{PROFESSIONAL EXPERIENCE}
+
+\jobentry{Infosys Limited}{Jan 2022 - Present}{Data Engineer (Technology Analyst)}{India}
+\noindent Collaborated on data engineering initiatives for a major retail chain with 1,800+ stores across North America:
+
+\begin{itemize}[leftmargin=*,nosep,itemsep=3pt,topsep=4pt]
+    \item Architected and implemented high-throughput data pipelines processing billions of rows weekly using Databricks and Apache Airflow, reducing processing time by \metric{35\%}
+    
+    \item Modernized legacy infrastructure by migrating critical pipelines from SQL Server Agent Jobs and SSIS Packages to Databricks, achieving \metric{60\%} faster execution times
+    
+    \item Optimized complex SQL queries and Spark jobs, resulting in \metric{40\%} faster execution times and significant cost savings
+    
+    \item Developed advanced data aggregation pipelines in Databricks to produce key business metrics for store performance evaluation, employee productivity analysis, and tax compliance reporting
+    
+    \item Supported migration to Databricks Unity Catalog, establishing robust data governance framework and ensuring streamlined compliance processes for sensitive customer data
+    
+    \item Integrated disparate vendor data systems into unified data platform, enabling comprehensive cross-functional analytics
+    
+    \item Delivered real-time executive reports using MicroStrategy, providing actionable insights that influenced strategic decisions for multi-billion dollar operations
+    
+    \item Mentored \textbf{4 junior engineers} while developing automated monitoring system, eliminating \metric{21 hours} of weekly manual tasks using Azure Databricks, Spark SQL, and Apache Airflow
+\end{itemize}
+
+\section{EDUCATION}
+\noindent\textbf{Bachelor of Engineering, Computer Engineering} | GPA: \textbf{7.52/10.0} \\
+Savitribai Phule Pune University, Pune, Maharashtra, India | April 2021
+
+\section{CERTIFICATIONS}
+\begin{itemize}[leftmargin=*,nosep,itemsep=2pt]
+    \item \textbf{Microsoft Certified:} Azure Data Engineer Associate (DP-203)
+    \item \textbf{Microsoft Certified:} Azure Data Fundamentals (DP-900)
+    \item \textbf{Google Cloud Certified:} Cloud Digital Leader
+    \item \textbf{Databricks Certified:} Databricks Fundamentals
+    \item \textbf{Databricks Certified:} Generative AI Fundamentals
+\end{itemize}
+
+\end{document}
