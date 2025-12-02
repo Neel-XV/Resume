@@ -1,0 +1,180 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Neel Bhadkamkar} \\ \vspace{1pt}
+    \small Senior Data Engineer \\ \vspace{1pt}
+    \href{mailto:neelbhadkamkar@outlook.com}{\underline{neelbhadkamkar@outlook.com}} $|$ 
+    \href{https://linkedin.com/in/neelbhadkamkar}{\underline{linkedin.com/in/neelbhadkamkar}} $|$
+    \href{https://github.com/Neel-XV}{\underline{github.com/Neel-XV}}
+\end{center}
+
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+  \small{Results-driven Data Engineer with \textbf{4+ years} of experience designing, implementing, and optimizing enterprise-scale data pipelines and ETL processes. Expertise in transforming billions of records into actionable insights using cloud platforms and big data frameworks. Proven track record in improving performance, reducing costs, and automating manual processes in retail analytics environments.}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Savitribai Phule Pune University}{Pune, Maharashtra, India}
+      {Bachelor of Engineering in Computer Engineering, GPA: 7.52/10.0}{April 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Infosys Limited}{Jan 2022 -- Present}
+      {Data Engineer (Technology Analyst)}{India}
+      \resumeItemListStart
+        \resumeItem{Collaborated on data engineering initiatives for a major retail chain with 1,800+ stores across North America}
+        \resumeItem{Architected and implemented high-throughput data pipelines processing billions of rows daily using Databricks and Apache Airflow, reducing processing time by \textbf{35\%}}
+        \resumeItem{Modernized legacy infrastructure by migrating critical pipelines from SQL Server Agent Jobs and SSIS Packages to Databricks, achieving \textbf{60\%} faster execution times}
+        \resumeItem{Optimized complex SQL queries and Spark jobs, resulting in \textbf{40\%} faster execution times and significant cost savings}
+        \resumeItem{Developed advanced data aggregation pipelines in Databricks to produce key business metrics for store performance evaluation, employee productivity analysis, and tax compliance reporting}
+        \resumeItem{Supported migration to Databricks Unity Catalog, establishing robust data governance framework and ensuring streamlined compliance processes for sensitive customer data}
+        \resumeItem{Integrated disparate vendor data systems into unified data platform, enabling comprehensive cross-functional analytics}
+        \resumeItem{Delivered real-time executive reports using MicroStrategy, providing actionable insights that influenced strategic decisions for multi-billion dollar operations}
+        \resumeItem{Mentored \textbf{4 junior engineers} while developing automated monitoring system, eliminating \textbf{21 hours} of weekly manual tasks using Azure Databricks, Spark SQL, and Apache Airflow}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming \& Query Languages}{: Python, SQL (T-SQL, MySQL), PySpark, Spark SQL} \\
+     \textbf{Data Engineering}{: ETL/ELT, Data Pipelines, Data Warehousing, Data Modeling, Schema Design} \\
+     \textbf{Big Data \& Cloud}{: Azure Data Services, Azure Databricks, Delta Lake, Apache Airflow, MS SQL Server, SQL Server Management Studio} \\
+     \textbf{Performance Optimization}{: Query Tuning, Data Pipeline Optimization, Resource Management} \\
+     \textbf{Reporting \& Visualization}{: MicroStrategy, Power BI} \\
+     \textbf{Data Quality \& Governance}{: Data Validation, Data Lineage, Unity Catalog, Compliance}
+    }}
+ \end{itemize}
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\textbf{Microsoft Certified:} Azure Data Engineer Associate (DP-203)}
+    \resumeSubItem{\textbf{Microsoft Certified:} Azure Data Fundamentals (DP-900)}
+    \resumeSubItem{\textbf{Google Cloud Certified:} Cloud Digital Leader}
+    \resumeSubItem{\textbf{Databricks Certified:} Databricks Fundamentals}
+    \resumeSubItem{\textbf{Databricks Certified:} Generative AI Fundamentals}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
